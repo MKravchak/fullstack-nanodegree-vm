@@ -10,9 +10,9 @@ This application requires:
 
 Getting Started
 ---------------
-Clone repo or copy files onto computer
-Make sure files are in the same folder
-Run module entertainment_center.py
+* Clone repo or copy files onto computer
+* Make sure files are in the same folder
+* Run module entertainment_center.py
 
 Documentation and Support
 -------------------------
@@ -29,7 +29,6 @@ Contributing
 
 Credits
 -------
-
 
 License
 -------
