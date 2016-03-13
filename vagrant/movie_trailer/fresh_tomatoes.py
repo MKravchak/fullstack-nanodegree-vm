@@ -18,7 +18,11 @@ main_page_head = '''
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <style type="text/css" media="screen">
         body {
+            background-image: url("http://www.pptgrounds.com/wp-content/uploads/2012/08/Blue-movie-film-strip-backgrounds.jpg");
             padding-top: 80px;
+        }
+        h2 {
+            color: white;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -40,7 +44,7 @@ main_page_head = '''
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            background-color: black;
             cursor: pointer;
         }
         .scale-media {
