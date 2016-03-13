@@ -1,19 +1,35 @@
+Movie Trailer Website - Matt Kravchak
+================
 
-## Project: Movie Trailer Website  - Matt Kravchak
+Python
+-------------
 
-## Required Libraries and Dependencies
-* A basic Movie Website Trailer project requires Python v2.* to be installed]
+This application requires:
+
+- Python 2.*
+
+Getting Started
+---------------
+Clone repo or copy files onto computer
+Make sure files are in the same folder
+Run module entertainment_center.py
+
+Documentation and Support
+-------------------------
+https://docs.google.com/document/d/1joDQNQl_4icYYm6tM_F9ch5hZEH_f157hlljSUGOLWs/pub?embedded=true
+
+Issues
+-------------
+
+Similar Projects
+----------------
+
+Contributing
+------------
+
+Credits
+-------
 
 
-## How to Run Project
-* git clone git@github.com:MKravchak/fullstack-nanodegree-vm.git
-* Make sure all files are in the same folder
-* Run module entertainment_center.py to start program
-
-
-## Extra Credit Description
-* workking on it ;}
-
-
-## Miscellaneous
-* Added recent movies I have seen
+License
+-------
