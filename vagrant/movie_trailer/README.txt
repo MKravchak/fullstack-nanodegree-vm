@@ -1,21 +1,19 @@
-Project: Movie Trailer Website  - Matt Kravchak
-================================
 
-Required Libraries and Dependencies
------------------------------------
-[In this section list your project’s dependencies. A basic Movie Website Trailer project requires Python v2.* to be installed]
+## Project: Movie Trailer Website  - Matt Kravchak
 
-
-How to Run Project
-------------------
-[In this section, explicitly describe the steps necessary to run your project from Github repo to the program execution. Make sure you try out these steps to verify that you didn’t overlook anything.]
+## Required Libraries and Dependencies
+* A basic Movie Website Trailer project requires Python v2.* to be installed]
 
 
-Extra Credit Description
-------------------------
-[If your project includes any features that exceed specifications, (such as including addition information about the movies or personalizing the website with additional HTML/CSS) or if your project deviates from the description in some other interesting way, describe that here.]
+## How to Run Project
+* git clone git@github.com:MKravchak/fullstack-nanodegree-vm.git
+* Make sure all files are in the same folder
+* Run module entertainment_center.py to start program
 
 
-Miscellaneous
--------------
-[If there is any additional information you’d like to include, feel free to add additional sections to the README.]
+## Extra Credit Description
+* workking on it ;}
+
+
+## Miscellaneous
+* Added recent movies I have seen
