@@ -17,5 +17,28 @@ CREATE TABLE matches (
 	loser int references players(id)
 );
 
+-- using self join to get winner view
+CREATE VIEW winners AS
+SELECT players.id, players.name, count(matches.winner) AS wins
+   	FROM players LEFT JOIN matches
+        ON players.id = matches.winner
+   	GROUP BY players.id
+   	ORDER BY wins DESC;
+
+-- using self join to get losers view
+CREATE VIEW losers AS
+SELECT players.id, players.name, count(matches.loser) AS losses
+   	FROM players LEFT JOIN matches
+        ON players.id = matches.loser
+   	GROUP BY players.id
+   	ORDER BY losses DESC;
+
+-- using winners and losers views to create standings view
+CREATE VIEW standings AS
+SELECT winners.id, winners.name, winners.wins, winners.wins + losers.losses as played 
+	FROM winners, losers
+	WHERE winners.id = losers.id
+	ORDER BY wins DESC;
+
 
 
