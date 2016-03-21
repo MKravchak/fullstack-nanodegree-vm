@@ -33,9 +33,9 @@ def countPlayers():
     db = connect()
     c = db.cursor()
     c.execute("SELECT * from players")
-    results = c.rowcount
+    count = c.rowcount
     db.close()
-    return results
+    return count
 
 
 def registerPlayer(name):
@@ -69,12 +69,10 @@ def playerStandings():
     """
     db = connect()
     c = db.cursor()
-    c.execute("SELECT * FROM standings"
-                )
-    results = c.fetchall()
-    print results
+    c.execute("SELECT * FROM standings")
+    standings = c.fetchall()
     db.close()
-    return results
+    return standings
 
 def reportMatch(winner, loser):
     """Records the outcome of a single match between two players.
