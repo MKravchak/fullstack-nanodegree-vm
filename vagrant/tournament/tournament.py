@@ -107,6 +107,5 @@ def swissPairings():
     c.execute('SELECT id, name FROM standings')
     rank = c.fetchall()
     pairs = [a+b for a,b in zip(rank[0::2], rank[1::2])]
-    print pairs
     return pairs
 

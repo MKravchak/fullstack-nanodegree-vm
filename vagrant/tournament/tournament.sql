@@ -17,6 +17,7 @@ CREATE TABLE matches (
 	loser int references players(id)
 );
 
+-- creates view for winners
 CREATE VIEW winners AS
 	SELECT players.id, players.name, count(matches.winner) AS wins
    	FROM players LEFT JOIN matches
@@ -24,6 +25,7 @@ CREATE VIEW winners AS
    	GROUP BY players.id
    	ORDER BY wins DESC;
 
+-- creates view for losers
 CREATE VIEW losers AS
 	SELECT players.id, players.name, count(matches.loser) AS losses
    	FROM players LEFT JOIN matches
@@ -31,6 +33,7 @@ CREATE VIEW losers AS
    	GROUP BY players.id
    	ORDER BY losses DESC;
 
+-- combines winners and losers views to create standings view
 CREATE VIEW standings AS
 	SELECT winners.id, winners.name, winners.wins, winners.wins + losers.losses as played 
 	FROM winners, losers
