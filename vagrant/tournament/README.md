@@ -18,6 +18,7 @@ Getting Started
 * find the tournament folder
 * type in psql
 * enter command CREATE DATABASE tournament;
+* enter command \c tournament;
 * enter command \i tournament.sql
 * escape psql
 * run command python tournament_test.py
